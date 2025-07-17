@@ -1,12 +1,12 @@
 import {
-    Stack,
-    useGlobalSearchParams,
-    useLocalSearchParams,
+  Stack,
+  useGlobalSearchParams,
+  useLocalSearchParams,
 } from "expo-router";
 import React from "react";
 import { SafeAreaView } from "react-native";
-import { ThemedText } from "../../../../components/ThemedText";
-import { ThemedView } from "../../../../components/ThemedView";
+import { ThemedText } from "../../../../../components/ThemedText";
+import { ThemedView } from "../../../../../components/ThemedView";
 
 const HomeLayout: React.FC = () => {
   const { settings } = useGlobalSearchParams();

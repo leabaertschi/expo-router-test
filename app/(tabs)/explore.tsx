@@ -28,12 +28,22 @@ export default function TabTwoScreen() {
       <Pressable
         onPress={() =>
           router.push({
-            pathname: "/(tabs)/home/[settings]/overview",
+            pathname: "/(tabs)/home/hello/[settings]/overview",
             params: { settings: "foobar" },
           })
         }
       >
-        <ThemedText type="link">Go to overview with settings</ThemedText>
+        <ThemedText type="link">Go to hello overview with settings</ThemedText>
+      </Pressable>
+      <Pressable
+        onPress={() =>
+          router.push({
+            pathname: "/(tabs)/home2/world/[id]/overview",
+            params: { id: "foobar" },
+          })
+        }
+      >
+        <ThemedText type="link">Go to world overview with id</ThemedText>
       </Pressable>
       <ThemedText>
         This app includes example code to help you get started.

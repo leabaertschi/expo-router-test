@@ -1,13 +1,13 @@
 import {
-    Link,
-    router,
-    useGlobalSearchParams,
-    useLocalSearchParams,
+  Link,
+  router,
+  useGlobalSearchParams,
+  useLocalSearchParams,
 } from "expo-router";
 import React from "react";
 import { Pressable, ScrollView } from "react-native";
-import { ThemedText } from "../../../../components/ThemedText";
-import { ThemedView } from "../../../../components/ThemedView";
+import { ThemedText } from "../../../../../components/ThemedText";
+import { ThemedView } from "../../../../../components/ThemedView";
 
 const Overview: React.FC = () => {
   const { settings } = useGlobalSearchParams();
@@ -22,7 +22,7 @@ const Overview: React.FC = () => {
       <ThemedView>
         <Link
           href={{
-            pathname: "/(tabs)/home/[settings]/overview",
+            pathname: "/(tabs)/home/hello/[settings]/overview",
             params: { settings: "foo" },
           }}
         >
@@ -31,7 +31,7 @@ const Overview: React.FC = () => {
         <Pressable
           onPress={() =>
             router.push({
-              pathname: "/(tabs)/home/[settings]/overview",
+              pathname: "/(tabs)/home/hello/[settings]/overview",
               params: { settings: "bar" },
             })
           }
